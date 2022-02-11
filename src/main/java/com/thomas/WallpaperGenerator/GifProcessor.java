@@ -151,6 +151,7 @@ public class GifProcessor {
                 ios.close();
 
                 OutputStream out = new FileOutputStream("Frames\\GifFrame_" + imageCount + ".gif");
+                new File("./FramesTest").mkdir();
                 File testFile = new File("FramesTest\\GifFrame_" + imageCount + ".gif");
                 FileOutputStream testOut = new FileOutputStream(testFile);
                 imageCount++;
