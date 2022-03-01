@@ -32,8 +32,8 @@ import org.springframework.web.bind.annotation.RequestPart;
 @RestController
 public class GreetingController {
 
-    //@CrossOrigin(origins = "http://localhost:3000")
-    @CrossOrigin(origins = "http://michaelthomastech.ca")
+    @CrossOrigin(origins = "http://localhost:3000")
+    //@CrossOrigin(origins = "https://michaelthomastech.ca")
     @RequestMapping(value = "/greeting", method = RequestMethod.POST)
     public void getGreeting(@RequestParam MultipartFile file, HttpServletResponse response)
             throws FileNotFoundException, IOException {
